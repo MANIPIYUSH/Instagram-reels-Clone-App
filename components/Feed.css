@@ -1,0 +1,84 @@
+.feed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:white;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+.nav-icons{
+margin: 0.5rem;
+background-color: black;
+}
+.nav-icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-btn{
+ width: 15rem;
+ height: 10vh;
+
+}
+.videos-container{
+  height: 80vh;
+  /* border: 1px solid black; */
+  border-radius:15px;
+  scrollbar-width: 0;
+  overflow-y:scroll;
+  position: relative;
+}
+.videos-container::-webkit-scrollbar{
+    display: none;
+}
+.post-container{
+height: 80vh;
+width: 20rem;
+margin-bottom:0.6rem;
+}
+.post-container > video{
+    height: 80vh;
+    width: 20rem;
+    object-fit: contain;
+    background-color: aqua;
+    border-radius: 15px;
+}
+.videos-info{
+    position: absolute;
+   bottom: 25px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.avatar_container{
+       display: flex;
+       justify-content: flex-start;
+       width: 70%;
+}
+.avatar_container > p{
+    margin-left: 0.5rem;
+
+}
+.post-like{
+    height: 3rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+@media only screen and (max-width:500px){
+    .nav-icons{
+        display: none;
+    }
+    
+}
